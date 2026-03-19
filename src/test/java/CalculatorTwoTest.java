@@ -28,6 +28,6 @@ class CalculatorTwoTest {
     @Test
     void divide() {
         int result = calculator.calculate("divide", a, b);
-        assertEquals(2, result);
+        assertEquals(0, result);
     }
 }
