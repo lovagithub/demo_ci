@@ -25,4 +25,17 @@ public class ApiTest {
                 .body("price", notNullValue())
                 .body("category", notNullValue());
     }
+    @Test
+    void testProductFields() {
+        given()
+                .when()
+                .get("https://fakestoreapi.com/products")
+                .then()
+                .statusCode(200)
+                .body("[0].title", notNullValue())
+                .body("[0].price", notNullValue())
+                .body("[0].category", notNullValue());
+    }
+
+
 }
