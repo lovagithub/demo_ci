@@ -6,6 +6,15 @@ import static org.hamcrest.Matchers.*;
 public class ApiTest {
 
     @Test
+    void testGetProducts() {
+        given()
+                .when()
+                .get("https://fakestoreapi.com/products")
+                .then()
+                .statusCode(200);
+    }
+
+    @Test
     void testSingleProduct() {
         given()
                 .when()
