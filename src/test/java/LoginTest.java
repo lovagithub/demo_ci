@@ -22,6 +22,7 @@ public class LoginTest {
 
     @Test
     void loginSuccessTest() {
+
         WebDriver driver = createDriver();
 
         driver.get("https://www.saucedemo.com/");
